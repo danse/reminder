@@ -363,9 +363,6 @@ textarea {
 }
 
 .note-day-header {
-  position: sticky;
-  top: 0;
-  z-index: 1;
   background: var(--surface);
   padding: 8px 14px 6px;
   font-size: 12px;
@@ -975,8 +972,4 @@ textarea {
 
 .note-list {
   padding-top: 48px;
-}
-
-.note-day-header {
-  top: 48px;
 }
