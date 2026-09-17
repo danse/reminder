@@ -84,7 +84,7 @@ export function Sidebar({ open, onNavigate }: SidebarProps) {
     >
       <div className="sidebar-brand">
         <NotebookText size={20} />
-        <span>{t('app.name')}</span>
+        <span className="sidebar-brand-name">{t('app.name')}</span>
         <LanguageSelect />
       </div>
 

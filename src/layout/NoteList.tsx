@@ -50,7 +50,7 @@ export function NoteList({ notes, selectedId }: NoteListProps) {
                 className={`note-item ${note.id === selectedId ? 'note-item-active' : ''}`}
                 data-testid={`note-item-${note.id}`}
               >
-                <div className="note-item-icon">
+                <div className={`note-item-icon note-item-icon-${note.type}`}>
                   <Icon size={16} />
                 </div>
                 <div className="note-item-main">

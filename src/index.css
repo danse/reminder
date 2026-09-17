@@ -1,12 +1,17 @@
 :root {
-  --bg: #f8fafc;
+  --bg: #f4f5ff;
   --surface: #ffffff;
-  --surface-muted: #f1f5f9;
-  --border: #e2e8f0;
+  --surface-muted: #eef0f8;
+  --border: #e3e5f0;
   --text: #1e293b;
   --text-muted: #64748b;
   --accent: #6366f1;
   --accent-hover: #4f46e5;
+  --accent-soft: #eef2ff;
+  --sky: #0ea5e9;
+  --sky-soft: #e0f2fe;
+  --amber: #f59e0b;
+  --amber-soft: #fef3c7;
   --danger: #e11d48;
   --danger-hover: #be123c;
   --radius: 8px;
@@ -27,7 +32,8 @@ body {
   margin: 0;
   font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   color: var(--text);
-  background: var(--bg);
+  background: linear-gradient(180deg, #eceefd 0%, var(--bg) 40%);
+  background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -68,13 +74,13 @@ textarea {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--border);
-  background: var(--surface);
+  border: none;
+  background: var(--accent);
   border-radius: var(--radius);
-  padding: 7px;
+  padding: 8px;
   cursor: pointer;
-  color: var(--text);
-  box-shadow: var(--shadow);
+  color: #fff;
+  box-shadow: 0 2px 8px rgb(99 102 241 / 0.4);
 }
 
 .sidebar-backdrop {
@@ -117,6 +123,17 @@ textarea {
   font-size: 18px;
 }
 
+.sidebar-brand svg {
+  color: var(--accent);
+}
+
+.sidebar-brand-name {
+  background: linear-gradient(90deg, var(--accent), var(--sky));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 .sidebar-brand .language-select {
   margin-left: auto;
 }
@@ -153,6 +170,7 @@ textarea {
 .sidebar-search input:focus {
   border-color: var(--accent);
   background: var(--surface);
+  box-shadow: 0 0 0 3px var(--accent-soft);
 }
 
 .sidebar-actions {
@@ -233,7 +251,7 @@ textarea {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  color: var(--text-muted);
+  color: var(--accent-hover);
 }
 
 .sidebar-list {
@@ -363,13 +381,13 @@ textarea {
 }
 
 .note-day-header {
-  background: var(--surface);
+  background: var(--accent-soft);
   padding: 8px 14px 6px;
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--text-muted);
+  color: var(--accent-hover);
   border-bottom: 1px solid var(--border);
 }
 
@@ -399,6 +417,22 @@ textarea {
   display: flex;
   align-items: flex-start;
   padding-top: 2px;
+}
+
+.note-item-icon-text {
+  color: var(--accent);
+}
+
+.note-item-icon-voice {
+  color: var(--sky);
+}
+
+.note-item-icon-picture {
+  color: var(--amber);
+}
+
+.note-item-active .note-item-icon svg {
+  color: #fff;
 }
 
 .note-item-main {
@@ -538,11 +572,12 @@ textarea {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  background: var(--surface-muted);
-  border: 1px solid var(--border);
+  background: var(--accent-soft);
+  border: 1px solid rgb(99 102 241 / 0.25);
   border-radius: 12px;
   padding: 2px 8px;
   font-size: 13px;
+  color: var(--accent-hover);
 }
 
 .tag-chip-remove {
@@ -621,6 +656,7 @@ textarea {
 
 .editor-textarea:focus {
   border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
 }
 
 .markdown {
@@ -767,6 +803,7 @@ textarea {
 
 .field-input:focus {
   border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
 }
 
 /* ---------- Recorder / picture picker ---------- */
