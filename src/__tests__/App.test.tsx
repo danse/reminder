@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { render, screen } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
 import { MemoryRouter } from 'react-router-dom'
 import App from '../App'
 import { ToastProvider } from '../components/Toast'
@@ -35,5 +36,22 @@ describe('App shell', () => {
     expect(await screen.findByTestId('editor-view')).toBeInTheDocument()
     expect(screen.getByTestId('editor-back')).toBeInTheDocument()
     expect(screen.queryByTestId('note-list')).not.toBeInTheDocument()
+  })
+
+  it('renders modals in document.body, outside the sidebar drawer', async () => {
+    render(
+      <MemoryRouter initialEntries={['/']}>
+        <ToastProvider>
+          <App />
+        </ToastProvider>
+      </MemoryRouter>,
+    )
+
+    await userEvent.click(await screen.findByTestId('new-voice-note'))
+
+    const modal = await screen.findByTestId('modal')
+    expect(modal).toBeInTheDocument()
+    expect(modal.closest('aside')).toBeNull()
+    expect(document.body.contains(modal)).toBe(true)
   })
 })

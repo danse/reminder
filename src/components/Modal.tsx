@@ -1,4 +1,5 @@
 import { type ReactNode } from 'react'
+import { createPortal } from 'react-dom'
 import { X } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 
@@ -10,7 +11,7 @@ interface ModalProps {
 
 export function Modal({ title, onClose, children }: ModalProps) {
   const { t } = useTranslation()
-  return (
+  return createPortal(
     <div
       className="modal-overlay"
       onClick={onClose}
@@ -39,6 +40,7 @@ export function Modal({ title, onClose, children }: ModalProps) {
         </div>
         <div className="modal-body">{children}</div>
       </div>
-    </div>
+    </div>,
+    document.body,
   )
 }
