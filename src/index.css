@@ -481,17 +481,19 @@ textarea {
 
 .editor-header {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 12px;
-  padding: 14px 18px;
+  gap: 8px 12px;
+  padding: 12px 14px;
   border-bottom: 1px solid var(--border);
 }
 
 .editor-title {
   flex: 1;
+  min-width: 0;
   border: none;
   outline: none;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   background: transparent;
   padding: 4px 0;
@@ -502,18 +504,23 @@ textarea {
 }
 
 .editor-header-actions {
+  flex: 1 1 100%;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 8px;
 }
 
 .file-select {
+  flex: 1;
+  min-width: 0;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background: var(--surface);
-  padding: 5px 8px;
+  padding: 6px 8px;
   font-size: 13px;
-  max-width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .editor-saved {
