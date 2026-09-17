@@ -1,0 +1,115 @@
+{
+  "app": {
+    "name": "Reminder"
+  },
+  "nav": {
+    "allNotes": "All notes",
+    "files": "Files",
+    "tags": "Tags",
+    "analytics": "Analytics",
+    "notes": "Notes",
+    "menu": "Menu"
+  },
+  "common": {
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "add": "Add",
+    "search": "Search",
+    "new": "New",
+    "rename": "Rename",
+    "confirm": "Confirm",
+    "back": "Back",
+    "empty": "Nothing here yet",
+    "loading": "Loading…",
+    "today": "Today",
+    "yesterday": "Yesterday"
+  },
+  "note": {
+    "new": "New note",
+    "newText": "Text note",
+    "newVoice": "Voice note",
+    "newPicture": "Picture note",
+    "types": {
+      "text": "Text",
+      "voice": "Voice",
+      "picture": "Picture"
+    },
+    "titlePlaceholder": "Title",
+    "contentPlaceholder": "Write in markdown…",
+    "deleteConfirm": "Delete this note?",
+    "deleted": "Note deleted",
+    "empty": "No notes here yet",
+    "emptySearch": "No notes match your search",
+    "selectPrompt": "Select a note or create a new one"
+  },
+  "editor": {
+    "write": "Write",
+    "preview": "Preview",
+    "saved": "Saved",
+    "addTag": "Add tag",
+    "tagPlaceholder": "Tag…",
+    "moveTo": "Move to file…",
+    "noFile": "No file"
+  },
+  "file": {
+    "all": "All notes",
+    "ungrouped": "Ungrouped",
+    "new": "New file",
+    "newPrompt": "File name",
+    "rename": "Rename file",
+    "deleteConfirm": "Delete this file? Notes will become ungrouped.",
+    "created": "File created",
+    "noFiles": "No files yet",
+    "color": "Color"
+  },
+  "tag": {
+    "new": "New tag",
+    "newPrompt": "Tag name",
+    "deleteConfirm": "Remove this tag from all notes?",
+    "noTags": "No tags yet",
+    "mergeFrom": "Merge into…",
+    "mergeConfirm": "Merge all notes tagged"
+  },
+  "search": {
+    "placeholder": "Search notes…",
+    "noResults": "No results"
+  },
+  "voice": {
+    "record": "Record",
+    "stop": "Stop",
+    "pause": "Pause",
+    "resume": "Resume",
+    "recording": "Recording…",
+    "save": "Save recording",
+    "discard": "Discard",
+    "permissionDenied": "Microphone access was denied",
+    "notSupported": "Recording is not supported in this browser",
+    "saved": "Voice note saved"
+  },
+  "picture": {
+    "add": "Add picture",
+    "capture": "Take a photo",
+    "upload": "Upload an image",
+    "saved": "Picture note saved",
+    "empty": "No pictures yet"
+  },
+  "analytics": {
+    "title": "Analytics",
+    "overview": "Overview",
+    "totalNotes": "Total notes",
+    "overTime": "Notes over time",
+    "byType": "Notes by type",
+    "topTags": "Top tags",
+    "storage": "Storage by type",
+    "weekly": "Notes per week",
+    "noData": "Create some notes to see analytics"
+  },
+  "language": {
+    "label": "Language",
+    "en": "English",
+    "it": "Italiano"
+  }
+}

@@ -2,12 +2,8 @@
 
 ## Overview
 
-This repository contains a privacy-preserving note-taker that runs
-entirely in the browser. Notes can be text (with markdown formatting),
-voice recordings or pictures.  They are stored locally (IndexedDB),
-grouped into files, tagged, analysed and visualised. The app is a
-fully static, offline-first web app: zero network calls, no server, no
-analytics sent anywhere.
+Product definition and requirements live in `product.md` — read it first. This
+file only records engineering conventions for working in this repository.
 
 ## Stack
 
@@ -46,7 +42,7 @@ Dexie tables:
 - `notes` — `id`, `type` (`text` | `voice` | `picture`), `title`,
   `content` (markdown), `createdAt`, `updatedAt`, `tags[]`, `fileId?`
 - `files` — `id`, `name`, `color`
-- `blobs` — `id`, `mimeType`, `data` (Blob) for voice/image payloads
+- `blobs` — `id`, `mimeType`, `data` (ArrayBuffer) for voice/image payloads
 
 Media payloads live in `blobs`, keeping `notes` rows lean. Blob
 lifecycle is tied to the owning note: deleting a note must delete its
@@ -79,3 +75,8 @@ blobs.
   identifiers (e.g.  `data-testid`), never by visible UI strings or
   text, so i18n changes cannot break tests. String assertions are
   allowed only in locale-file tests (en/it consistency).
+- **Test-driven refinement**: refrain from throwaway "troubleshooting"
+  tests or debug-only assertions. When investigating an environment or
+  library assumption, turn the finding into a real, permanent test (or
+  a documented convention) instead of a scratch test — so assumptions
+  stay validated over time.

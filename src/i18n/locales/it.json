@@ -1,0 +1,115 @@
+{
+  "app": {
+    "name": "Reminder"
+  },
+  "nav": {
+    "allNotes": "Tutte le note",
+    "files": "File",
+    "tags": "Tag",
+    "analytics": "Analisi",
+    "notes": "Note",
+    "menu": "Menu"
+  },
+  "common": {
+    "cancel": "Annulla",
+    "save": "Salva",
+    "delete": "Elimina",
+    "edit": "Modifica",
+    "close": "Chiudi",
+    "add": "Aggiungi",
+    "search": "Cerca",
+    "new": "Nuovo",
+    "rename": "Rinomina",
+    "confirm": "Conferma",
+    "back": "Indietro",
+    "empty": "Ancora nessun contenuto",
+    "loading": "Caricamento…",
+    "today": "Oggi",
+    "yesterday": "Ieri"
+  },
+  "note": {
+    "new": "Nuova nota",
+    "newText": "Nota di testo",
+    "newVoice": "Nota vocale",
+    "newPicture": "Nota immagine",
+    "types": {
+      "text": "Testo",
+      "voice": "Voce",
+      "picture": "Immagine"
+    },
+    "titlePlaceholder": "Titolo",
+    "contentPlaceholder": "Scrivi in markdown…",
+    "deleteConfirm": "Eliminare questa nota?",
+    "deleted": "Nota eliminata",
+    "empty": "Ancora nessuna nota qui",
+    "emptySearch": "Nessuna nota corrisponde alla ricerca",
+    "selectPrompt": "Seleziona una nota o creane una nuova"
+  },
+  "editor": {
+    "write": "Scrivi",
+    "preview": "Anteprima",
+    "saved": "Salvata",
+    "addTag": "Aggiungi tag",
+    "tagPlaceholder": "Tag…",
+    "moveTo": "Sposta nel file…",
+    "noFile": "Nessun file"
+  },
+  "file": {
+    "all": "Tutte le note",
+    "ungrouped": "Senza file",
+    "new": "Nuovo file",
+    "newPrompt": "Nome del file",
+    "rename": "Rinomina file",
+    "deleteConfirm": "Eliminare questo file? Le note resteranno senza file.",
+    "created": "File creato",
+    "noFiles": "Ancora nessun file",
+    "color": "Colore"
+  },
+  "tag": {
+    "new": "Nuovo tag",
+    "newPrompt": "Nome del tag",
+    "deleteConfirm": "Rimuovere questo tag da tutte le note?",
+    "noTags": "Ancora nessun tag",
+    "mergeFrom": "Unisci in…",
+    "mergeConfirm": "Unisci tutte le note con tag"
+  },
+  "search": {
+    "placeholder": "Cerca note…",
+    "noResults": "Nessun risultato"
+  },
+  "voice": {
+    "record": "Registra",
+    "stop": "Ferma",
+    "pause": "Pausa",
+    "resume": "Riprendi",
+    "recording": "Registrazione…",
+    "save": "Salva registrazione",
+    "discard": "Scarta",
+    "permissionDenied": "Accesso al microfono negato",
+    "notSupported": "La registrazione non è supportata da questo browser",
+    "saved": "Nota vocale salvata"
+  },
+  "picture": {
+    "add": "Aggiungi immagine",
+    "capture": "Scatta una foto",
+    "upload": "Carica un'immagine",
+    "saved": "Nota immagine salvata",
+    "empty": "Ancora nessuna immagine"
+  },
+  "analytics": {
+    "title": "Analisi",
+    "overview": "Panoramica",
+    "totalNotes": "Totale note",
+    "overTime": "Note nel tempo",
+    "byType": "Note per tipo",
+    "topTags": "Tag principali",
+    "storage": "Spazio per tipo",
+    "weekly": "Note per settimana",
+    "noData": "Crea qualche nota per vedere le analisi"
+  },
+  "language": {
+    "label": "Lingua",
+    "en": "English",
+    "it": "Italiano"
+  }
+}
